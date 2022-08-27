@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Login - Jhonatan Facete</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body class="authentication-bg">
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Jhonatan Facete</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html"><i class="bi bi-house-door"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="login.html"><i class="bi bi-lock-fill"></i> Login</a>
+                </li>
+              </ul>
+              <form class="d-flex mb-0" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busqueda ..." aria-label="Search">
+                <button class="btn btn-outline-warning" type="button"><i class="bi bi-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <!-- CONTENIDO -->
+        <div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
+            <div class="container pt-5">
+                <div class="row justify-content-center pt-3">
+                    <div class="col-xxl-4 col-lg-5">
+                        <div class="card">
+
+                           
+                            <div class="card-header pt-4 pb-4 text-center bg-primary">
+                                <h4 class="text-white mb-0">BIENVENIDO</h4>
+                            </div>
+
+                            <div class="card-body p-4">
+                                
+                                <div class="text-center w-75 m-auto">
+                                    <h4 class="text-dark-50 text-center pb-0 fw-bold">INICIO SESIÓN</h4>
+                                    <p class="text-muted mb-4">Ingrese su dirección de correo electrónico y contraseña para acceder al panel de administración.</p>
+                                </div>
+
+                                <form action="index.html">
+
+                                    <div class="mb-3">
+                                        <label for="correo" class="form-label"><i class="bi bi-envelope"></i> Correo Electrónico</label>
+                                        <input class="form-control" type="email" id="correo" required="" placeholder="@">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <a href="pages-recoverpw.html" class="text-muted float-end"><small>¿Olvidaste tu contraseña?</small></a>
+                                        <label for="clave" class="form-label"><i class="bi bi-lock-fill"></i> Contraseña</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type="password" id="clave" class="form-control" placeholder="****">
+                                            <div class="input-group-text" data-password="false">
+                                                <span class="bi bi-eye"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 mb-3">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="checkbox-signin" checked="">
+                                            <label class="form-check-label" for="checkbox-signin">Recordar Acceso</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 mb-0 text-center">
+                                        <button class="btn btn-primary" type="submit"> Iniciar <i class="bi bi-check2-circle"></i></button>
+                                    </div>
+
+                                </form>
+                            </div> <!-- end card-body -->
+                        </div>
+                        <!-- end card -->
+
+                        <div class="row mt-3">
+                            <div class="col-12 text-center">
+                                <p class="text-muted">¿No tienes una cuenta? <a href="#" class="text-muted ms-1"><b>Registrarse</b></a></p>
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- END CONTENIDO -->
+      
+      
+        <!-- FOOTER -->
+        <footer class="px-5 py-5 pb-2 bg-primary">
+            <div class="row">
+              <div class="col-12 col-md text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+                <small class="d-block mb-3 text-white">© 2022 Facete</small>
+              </div>
+              <div class="col-6 col-md">
+                <h5 class="">Features</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="link-secondary text-white" href="#">Cool stuff</a></li>
+                  <li><a class="link-secondary text-white" href="#">Random feature</a></li>
+                  <li><a class="link-secondary text-white" href="#">Team feature</a></li>
+                  <li><a class="link-secondary text-white" href="#">Stuff for developers</a></li>
+                  <li><a class="link-secondary text-white" href="#">Another one</a></li>
+                  <li><a class="link-secondary text-white" href="#">Last time</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="link-secondary text-white" href="#">Resource name</a></li>
+                  <li><a class="link-secondary text-white" href="#">Resource</a></li>
+                  <li><a class="link-secondary text-white" href="#">Another resource</a></li>
+                  <li><a class="link-secondary text-white" href="#">Final resource</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="link-secondary text-white" href="#">Business</a></li>
+                  <li><a class="link-secondary text-white" href="#">Education</a></li>
+                  <li><a class="link-secondary text-white" href="#">Government</a></li>
+                  <li><a class="link-secondary text-white" href="#">Gaming</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                  <li><a class="link-secondary text-white" href="#">Team</a></li>
+                  <li><a class="link-secondary text-white" href="#">Locations</a></li>
+                  <li><a class="link-secondary text-white" href="#">Privacy</a></li>
+                  <li><a class="link-secondary text-white" href="#">Terms</a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="float-end"><a href="#" class="text-white">Volver arriba <i class="bi bi-chevron-double-up"></i></a></p>
+            <p>&copy; 2022 Jhonatan Facete &middot; <a href="#" class="text-white">Privacy</a> &middot; <a href="#" class="text-white">Terms</a></p>
+          </footer>
+      </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> 
+</body>
+</html>
